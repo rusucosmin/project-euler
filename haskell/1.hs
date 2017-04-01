@@ -1,3 +1,1 @@
-good x = if (mod x 3 == 0) || (mod x 7 == 0) then 1 else 0
-
-main = print (good 5)
+main = print (sum [x | x <- [1..999], (mod x 5 == 0) || (mod x 3 == 0)])
